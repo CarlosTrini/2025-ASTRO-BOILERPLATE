@@ -4,9 +4,7 @@ html {
 }
 
 body {
-    background-color: var(--color-secondary);
     font-family: var(--font-inika-regular);
-    letter-spacing: .2rem;
 }
 
 /* --- Títulos (Headings) --- */
