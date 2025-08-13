@@ -1,10 +1,17 @@
-# Astro Starter Kit: Basics
+# 2025-BOILERPLATE-ASTRO
 
-```sh
-npm create astro@latest -- --template basics
-```
+## ES NECESARIO DESVINCULAR EL GIT DEL CUAL SE CLONA Y AGREGAR A UN NUEVO REPOSITORIO EL NUEVO PROYECTO
+### npm install
+### npm run dev
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## AHORA DESVINCULAR
+
+### git remote -v => para ver repositiorios vinculados
+### git remote remove origin (para desvincularlo)
+
+### git remote -v => Ya no debería de aparecer ningún valor en fetch y push
+### agrega a tu nuevo repositorio 
+
 
 ## 🚀 Project Structure
 
@@ -15,18 +22,57 @@ Inside of your Astro project, you'll see the following folders and files:
 ├── public/
 │   └── favicon.svg
 ├── src
+│   │ 
 │   ├── assets
-│   │   └── astro.svg
+│   │   └──images
+│   │ 
 │   ├── components
-│   │   └── Welcome.astro
+│   │   └── shared
+│   │     └────BaseHead.astro
+│   │ 
+│   ├── helpers
+│   │   └── navMobile.astro
+│   │   └── siteTheme.ts
+│   │ 
 │   ├── layouts
 │   │   └── Layout.astro
+│   │ 
 │   └── pages
-│       └── index.astro
+│   │    └── index.astro
+│   │ 
+│   ├── styles
+│   │   │── components
+│   │   │── layout
+│   │   │  └──── layout.module.css
+│   │   │── pages
+│   │   │  └──── home.module.css
+│   │   │── utils
+│   │   │  └────  _colors.css
+│   │   │  └────  _containers.css
+│   │   │  └────  _fonts.css
+│   │   │  └────  _generics.css
+│   │   │  └────  _tags.css
+│   │   └── globals.css
+│   │
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🚀 Dependencies
+
+```text
+/
+"dependencies": {
+    "@astrojs/react": "^4.3.0",
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "astro": "^5.12.9",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.11"
+  }
+
+```
 
 ## 🧞 Commands
 
@@ -41,8 +87,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-# 2025-ASTRO-BOILERPLATE
-# 2025-BOILERPLATE-ASTRO
